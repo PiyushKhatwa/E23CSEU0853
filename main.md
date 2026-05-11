@@ -39,3 +39,9 @@ To reduce database overload:
 - Pagination prevents loading excessive records
 - Lazy loading improves frontend performance
 - WebSockets reduce unnecessary polling requests
+
+# Stage 5
+
+Sequential notification processing creates delays for large user bases.
+
+Using message queues like RabbitMQ or Kafka improves scalability by distributing notification jobs across background workers.
