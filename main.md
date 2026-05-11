@@ -18,3 +18,16 @@ PostgreSQL is chosen because:
 - structured data
 - indexing support
 - efficient querying
+stage 3
+The query becomes slow because the database performs a full table scan when indexes are missing. Since the notifications table contains millions of records, filtering and sorting operations become expensive.
+
+The query filters on:
+- studentID
+- isRead
+
+and sorts on:
+- createdAt
+
+A composite index on these columns improves performance significantly.
+
+Indexes improve read performance but increase storage usage and slightly slow down write operations.
