@@ -1,0 +1,8 @@
+{
+  "endpoint": "/api/notifications",
+  "method": "GET",
+  "query": {
+    "page": 1,
+    "limit": 10
+  }
+}
